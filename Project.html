@@ -1,76 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admitly</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    skjfkdjfs
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            text-align: center;
-        }
+  <link rel="preconnect"
+  href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+  href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Jua&display=swap"
+  rel="stylesheet">
 
-        header {
-            background-color: #1e3a8a;
-            color: white;
-            padding: 40px 20px;
-        }
+  <title>AdmitDillo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        h1 {
-            margin: 0;
-            font-size: 48px;
-        }
+  <style>
+    body {
+      font-family: 'Jua';
+      margin: 0;
+      background: #52677d;
+      color: #1C2E4A;
+    }
+    header {
+      background: #1C2E4A;
+      color: #fcf6bd;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 18px auto;
+      padding: 0 14px 30px;
+    }
 
-        p {
-            font-size: 20px;
-            color: #333;
-        }
+    .redirect {
+      color: #D1CFC9;
+      text-align: center;
+    }
+    .box {
+      background: #fcf6bd;
+      border: 1px solid #fcf6bd;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    h2 { margin: 0 0 10px; }
+    h1 {font-family: 'Jua'; font-size: 64px;}
+    label { display:block; margin: 10px 0 6px; font-weight: bold; }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #fcf6bd;
+      border-radius: 8px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    textarea { min-height: 80px; }
+    .row { display: flex; gap: 10px; }
+    .row > div { flex: 1; }
+    button {
+      background: #1C2E4A;
+      color: #fcf6bd;
+      border: none;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    button:hover { background: #1C2E4A; }
+    .small {
+      font-size: 13px;
+      font-family: 'Jua';
+      color: #555;
+      margin-top: 6px;
+    }
+    .results h3 { margin-bottom: 6px; }
+    .card {
+      border: 1px solid #fcf6bd;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+      background: #fcf6bd;
+    }
+    
+    .redirect {
+      color: #1C2E4A;
+      text-align: center;
+    }
+    
+    ul { margin: 5px 0 0; }
+    .tag {
+      display: inline-block;
+      background: #fcf6bd;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+    footer {
+      text-align: center;
+      color: #fcf6bd;
+      font-size: 12px;
+      padding: 20px 0 10px;
+    }
+    
+    li{
+      display: inline;
+      color: #52677d;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 18px;
-        }
+    li a {
+      color: #52677d;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 15pxm;
+      padding: 10px 15px;
+    }
 
-        .button:hover {
-            background-color: #1d4ed8;
-        }
+    li a:hover {
+      background-color: #1C2E4A;
+      border-radius: 8px;
+      color:#D1CFC9;
+    }
 
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #e5e7eb;
-        }
-    </style>
+    nav {
+      width: 100%;
+      background: #fcf6bd;
+      margin: 1;
+      padding: 30px 0 30px;
+    }
+  </style>
 </head>
 
 <body>
+  <header>
+    <h1>AdmitDillo</h1>
+    <p class="small" style="color:#fcf6bd;margin:2px 0 0;font-family:'Jua'; font-size: 32px;"> College Application Planner </p>
+  </header>
 
-    <header>
-        <h1>Admitly</h1>
-        <p>Your Smarter Path to College Admissions</p>
-        <a href="#" class="button">Get Started</a>
-    </header>
+  <nav>
+    <ul>
+        <li><a href="project.html" class = "active">College Recommendations</a></li>
+        <li><a href="studentConnect.html">Student Connect</a></li>
+        <li><a href="applicationSchedule.html">Schedule Creator</a></li>
+    </ul>
+  </nav>
 
-    <section>
-        <h2>About Us</h2>
-        <p>
-            Admitly helps students navigate the college admissions process 
-            with smarter tools, better insights, and personalized guidance.
-        </p>
-    </section>
+  <main>
+    <div class="box">
+      <h2>Student Info</h2>
 
-    <footer>
-        <p>© 2026 Admitly. All rights reserved.</p>
-    </footer>
+      <div class="row">
+        <div>
+          <label for="state">State</label>
+           <select id="state"></select>
+         </div>
+         <div>
+          <label for="gpa">GPA </label>
+          <input id="gpa" type="number" step="0.01" min="0" max="5.5" />
+        </div>
+      </div>
 
+      <label for="interests">Interests / Majors (comma separated)</label>
+      <input id="interests" placeholder="Computer Science, Nursing, Business" />
+
+      <label for="schools">Schools you're interested in already (comma separated)</label>
+      <input id="schools" placeholder="Drexel University, West Chester University, Pittsburgh University" />
+
+      <label for="notes">Notes (optional)</label>
+      <input id="notes" placeholder="Budget, Commute vs Corm, Sports, etc." />
+
+      <button id="runBtn">Get Recommendations</button>
+      <button id="resetBtn" style="background:#fcf6bd;margin-left:8px;">Reset</button>
+
+    </div>
+
+    <div class="box results">
+      <h2>Results</h2>
+      <div id="output" class="small">Fill out the form and click “Get Recommendations”.</div>
+    </div>
+
+    
+  </main>
+
+  <script>
+    
+    const US_STATES = [
+      ["AL","Alabama"],["AK","Alaska"],["AZ","Arizona"],["AR","Arkansas"],["CA","California"],
+      ["CO","Colorado"],["CT","Connecticut"],["DE","Delaware"],["DC","District of Columbia"],
+      ["FL","Florida"],["GA","Georgia"],["HI","Hawaii"],["ID","Idaho"],["IL","Illinois"],
+      ["IN","Indiana"],["IA","Iowa"],["KS","Kansas"],["KY","Kentucky"],["LA","Louisiana"],
+      ["ME","Maine"],["MD","Maryland"],["MA","Massachusetts"],["MI","Michigan"],["MN","Minnesota"],
+      ["MS","Mississippi"],["MO","Missouri"],["MT","Montana"],["NE","Nebraska"],["NV","Nevada"],
+      ["NH","New Hampshire"],["NJ","New Jersey"],["NM","New Mexico"],["NY","New York"],
+      ["NC","North Carolina"],["ND","North Dakota"],["OH","Ohio"],["OK","Oklahoma"],["OR","Oregon"],
+      ["PA","Pennsylvania"],["RI","Rhode Island"],["SC","South Carolina"],["SD","South Dakota"],
+      ["TN","Tennessee"],["TX","Texas"],["UT","Utah"],["VT","Vermont"],["VA","Virginia"],
+      ["WA","Washington"],["WV","West Virginia"],["WI","Wisconsin"],["WY","Wyoming"]
+    ];
+
+    const stateSelect = document.getElementById("state");
+    const gpaInput = document.getElementById("gpa");
+    const interestsInput = document.getElementById("interests");
+    const notesInput = document.getElementById("notes");
+    const output = document.getElementById("output");
+
+    function populateStates() {
+      US_STATES.forEach(([code, name]) => {
+        const opt = document.createElement("option");
+        opt.value = code;
+        opt.textContent = name;
+        stateSelect.appendChild(opt);
+      });
+      stateSelect.value = "PA";
+    }
+
+    function exampleSchoolsForState(code) {
+      const map = {
+        PA: ["Penn State", "University of Pittsburgh", "Temple University"],
+        CA: ["UCLA", "UC Berkeley", "UC San Diego"],
+        NY: ["Cornell University", "NYU", "Stony Brook University"],
+        TX: ["UT Austin", "Texas A&M", "Rice University"],
+        FL: ["University of Florida", "Florida State", "UCF"],
+      };
+      return map[code] || ["State University (example)", "Regional College (example)", "Private University (example)"];
+    }
+
+    function getFitLabel(gpa) {
+      if (!gpa) return "Mix (reach/match/safety)";
+      if (gpa >= 3.8) return "More competitive options (reach/match)";
+      if (gpa >= 3.4) return "Balanced list (match)";
+      return "Focus on match/safety schools";
+    }
+
+    function mockScholarships(interests, notes) {
+      const list = [
+        { name: "Local Community Scholarship ", why: "Local awards often have fewer applicants" },
+        { name: "Leadership & Service Scholarship ", why: "Good if you have leadership/volunteering" },
+        { name: "Need-Based Grant ", why: "Useful if budget is a concern" },
+      ];
+      const lower = (interests + " " + notes).toLowerCase();
+      if (lower.includes("nursing") || lower.includes("health")) {
+        list.unshift({ name: "Future Healthcare Scholarship (example)", why: "For students going into healthcare" });
+      }
+      if (lower.includes("computer") || lower.includes("cs") || lower.includes("engineering")) {
+        list.unshift({ name: "STEM Futures Award (example)", why: "For STEM interests + strong grades" });
+      }
+      return list.slice(0, 4);
+    }
+
+    function mockSchedule() {
+      return [
+        "Make a college list (reach/match/safety),",
+        "Ask for recommendation letters,",
+        "Draft personal statement,",
+        "Draft 2 supplemental essays,",
+        "Start scholarships (2 per week),"
+      ];
+    }
+
+    function renderResults(data) {
+      const html = `
+        <div class="card">
+          <h3> In-State College Ideas </h3>
+          <div class="small">${data.fitTip}</div>
+          <ul>
+            ${data.colleges.map(c => `<li>${c}</li>`).join(", ")}
+          </ul>
+          <div style="margin-top:8px;">
+            <span class="tag">Try EA if available</span>
+            <span class="tag">Try ED if it’s your #1 & Affordable</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Scholarship Ideas</h3>
+          <ul>
+            ${data.scholarships.map(s => `<li><b>${s.name}</b> — ${s.why}</li>`).join(", ")}
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Simple Schedule Checklist</h3>
+          <ul>
+            ${data.schedule.map(item => `<li>${item}</li>`).join(" ")}
+          </ul>
+        </div>
+      `;
+      output.innerHTML = html;
+    }
+
+    document.getElementById("runBtn").addEventListener("click", () => {
+      const stateCode = stateSelect.value;
+      const stateName = US_STATES.find(s => s[0] === stateCode)?.[1] || stateCode;
+
+      const gpa = parseFloat(gpaInput.value);
+      const interests = interestsInput.value.trim();
+      const notes = notesInput.value.trim();
+
+      const colleges = exampleSchoolsForState(stateCode);
+      const fitTip = getFitLabel(Number.isFinite(gpa) ? gpa : null);
+      const scholarships = mockScholarships(interests, notes);
+      const schedule = mockSchedule();
+
+      renderResults({ stateName, colleges, fitTip, scholarships, schedule });
+    });
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      stateSelect.value = "PA";
+      gpaInput.value = "";
+      interestsInput.value = "";
+      notesInput.value = "";
+      output.textContent = "Fill out the form and click “Get Recommendations”.";
+    });
+
+    populateStates();
+  </script>
 </body>
 </html>
+
